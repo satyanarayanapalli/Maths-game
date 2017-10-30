@@ -1,0 +1,309 @@
+body
+{
+  width: 100%;
+  height: 100%;
+  background-color:#87CEFA;
+}
+.first_screen
+{
+	width:100%;
+	height:100%;
+}
+.space_rows
+{
+	min-height:20%;
+
+}
+
+.splash_container
+{
+	
+	background-color:#87CEFA;
+}
+#button_div
+{
+  width: 100%;
+  height: 30vh;
+  display:flex;
+  align-items:center;  /*vertically aligned! */
+  justify-content: center;
+ 
+  
+}
+
+
+/*//////////////////////////*/
+.game_screen
+{
+	width:100%;
+	height:100%;
+	display:none;
+}
+
+html
+{
+ font-size:16px;
+}
+.game_container
+{
+	width: 100%;
+	height: 100vh;
+	padding-top: 20%;
+	position: relative;
+}
+.game_box
+{
+	width: 100%;
+	height: 80%;
+	position: relative;
+	background-color: #4e7792;
+}
+.group_div
+{
+	width: 100%;
+	height: 40%;
+	position: absolute;
+	bottom: 0;
+}
+.timer_divs
+{
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	background-color: #334e60;
+
+}
+#div2
+{
+	top: 34%;
+}
+#div3
+{
+	top: 68%;
+}
+.progress 
+	{
+		width:0%;
+		height: 80%;
+		top: 10%;
+		position: absolute;
+		background-color: white;
+	}
+	.numbers
+	{
+		width: 100%;
+		height: 100%;
+		font-size:2rem;
+		font-style: bold;
+		text-align: center;
+		color: #F08080;
+		position: absolute;
+	
+		
+	}
+	#question_div
+	{
+		
+		width: 100%;
+		height: 40%;
+		position: absolute;
+		margin-top: 10%;
+		color: black;
+		display: inline;
+		font-size: 2rem;
+		
+	}
+	#score_div
+	{
+		width: 100%;
+		height: 10%;
+		position: absolute;
+		color: black;
+		display: inline;
+
+	}
+	#nscore
+	{
+		width: 30%;
+		height: 100%;
+		position: relative;
+		float: left;
+		margin-left: 2%;
+		display: inline;
+	}
+	#highest_score
+	{
+		width: 50%;
+		height: 100%;
+		position: relative;
+		float: right;
+		margin-right: 2%;
+		display: inline;
+		text-align: right;
+	}
+	/*#highest_score_div
+	{
+		width: 100%;
+		height: 20%;
+		margin-top: 10%;
+		position: absolute;
+		color: black;
+		
+	}*/
+	/*final containte*/
+
+	.final_container
+  {
+    width: 100%;
+    height: 100%;
+    display: none;
+   
+  }
+
+    #share
+  {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .result_container
+{
+  background-color: #ffffff;
+  width: 100%;
+  height: 90%;
+  border: 7px solid #1E90FF;
+  border-radius: 20px;
+  overflow: auto;
+  margin-top: 5%;
+}
+
+ #fails
+   {
+      margin-top: 5%;
+   }
+    #restart_moregames
+  {
+    width: 100%;
+    height: 10%;
+    margin-top: 5%;
+  
+  }
+  .retry
+{
+
+  float: left;
+  margin-left: 5%;
+}
+
+a{
+  float: right;
+  margin-right: 5%;
+}
+
+  #tags
+    {
+      margin-top: 5%;
+      font-size: 1rem;
+    }
+
+ 
+  #go_score
+{
+  font-size: 2rem;
+}
+
+	h1
+	{
+		font-size: 3em;
+	}
+
+
+/*	// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+
+	#icons
+	{
+	 margin-top:10%;
+	}
+	html
+	{
+		font-size:13px;
+	}
+	.numbers
+	{
+		
+		font-size:2rem;
+		padding-top: 3%;
+		
+	}
+	#question_div
+	{
+		margin-top:30%;
+	}
+	.result_container
+	{
+		margin-top: 35%;
+	}
+
+ }
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) { 
+
+	#icons
+	{
+		margin-top:10%;
+	}
+	html
+	{
+		font-size:14px;
+	}
+	.numbers
+	{
+		
+		font-size:2rem;
+		padding-top: 2%;
+		
+	}
+
+ }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) { 
+
+	#icons
+	{
+		margin-top:3%;
+	}
+	.numbers
+	{
+		
+		font-size:2rem;
+		
+	}
+	#question_div
+	{
+		margin-top: 13%;
+	}
+
+ }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+		#icons
+		{
+			margin-top:2%;
+		}
+
+ }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+		#icons
+		{
+			margin-top:8%;
+		}
+
+ }

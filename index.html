@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Play With Numbers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/index.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- First Screen -->
+
+<div class="first_screen">
+ <div class="container-fluid">
+  
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="space_rows">
+      </div>
+    </div>
+
+
+    <div class="col-sm-4"><div class="splash_container">
+      <center>
+      <img src="images/icon1.png" class="img-responsive" id="icons"/>
+    </center>
+
+      <div id="button_div">
+   <button class="play_btn btn btn-danger btn-lg">PLAY</button>
+ </div>
+    </div>
+    </div>
+
+
+    <div class="col-sm-4">
+      <div class="space_rows">
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+  </div>
+
+<!-- End of First screen -->
+
+
+
+<!-- dash board -->
+<div class="game_screen">
+
+	<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3"><div class="space_rows">
+      </div></div>
+    <div class="col-sm-6">
+
+    	<div class="game_container">
+
+    		<div class="game_box" id="game_box">
+
+      <div id="score_div"><h2 id="nscore">0</h2> <h2 id="highest_score"></h2></div>
+         <!--  <div id="highest_score_div"></div> -->
+
+          <div id="question_div">
+            <center>
+              <span><h1 id="que"></h1></span>
+            </center>
+          </div>
+
+    			<div class="group_div">
+
+    				<div class="timer_divs" id="div1">
+    					<div class="progress" id="progress1"></div>
+    					<div class="numbers" id="one">1</div>
+    				</div>
+    				<div class="timer_divs" id="div2">
+    				<div class="progress" id="progress2"></div>
+            <div class="numbers" id="two">2</div>
+    			</div>
+    				<div class="timer_divs" id="div3">
+    				<div class="progress" id="progress3"></div>
+            <div class="numbers" id="three">3</div>
+    			</div>
+
+    			</div>
+
+    		</div>
+    	</div>
+
+
+    </div>
+    <div class="col-sm-3"><div class="space_rows">
+      </div></div>
+  </div>
+</div>
+</div>
+
+<!-- end of gamescreen -->
+
+<!-- begin final screen -->
+
+ <div class="final_container">
+    <div class="container">
+  
+ <div class="row">
+
+  
+  <div class="col-sm-2"><div class="space_rows"></div></div>
+  <div class="col-sm-8">
+
+
+  <div class="result_container">
+    <div class="animated zoomIn">
+      <h1 id="score" class="text-center">Your Score:</h1>
+    <center>
+   <span id="go_score">0</span>
+  </center>
+
+  <center>
+    <p id="fails">
+      <strong id="textValue" style="color:red;">Cheer! 
+you did your best to become the best that you are capable of becoming. Effort to collect more & build up the points!</strong>
+      </p>
+      
+    </center>
+
+
+  <div id="restart_moregames">
+     <a href="#" class="btn btn-info btn-sm retry" id="retry">
+          <span class="glyphicon glyphicon-repeat"></span> Repeat
+        </a>
+     <!-- <a href="#" id="retry" class ="retry">Retry</a> -->
+
+      <a href="http://sosimplegames.com/" class="btn btn-info btn-sm">
+          <span class="glyphicon glyphicon-bookmark"></span> More Games
+        </a>
+    <!-- <a href="http://sosimplegames.com/">More Games</a> -->
+  </div>
+  <br/>
+  <center>
+    <p id="tags">
+      <strong style="color:red;">TAG, you're it! CHALLENGE your FRIENDS by tagging them in the post. To share click on "SHARE ON FACEBOOK" button.</strong>
+      </p>
+      
+      <a class="btn btn-block btn-social btn-facebook" id="share">
+    <span class="fa fa-facebook"></span> Share on facebook
+  </a>
+      <!--  <div id="share" class="text-center">Share on facebook</div> -->
+
+    </center>
+
+</div>
+</div>
+
+  </div>
+  <div class="col-sm-2"><div class="space_rows"></div></div>
+</div>
+</div>
+</div>
+
+
+
+<!-- end of final screen -->
+
+</body>
+
+</html>
