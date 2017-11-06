@@ -8,22 +8,29 @@ body
 {
 	width:100%;
 	height:100%;
-}
-.space_rows
-{
-	min-height:20%;
 
 }
+
 
 .splash_container
 {
 	
 	background-color:#87CEFA;
+  width: 100%;
+  height: 80%;
+  margin-top: 19%;
+
+
+}
+#imageicon
+{
+  width: 80%;
+  height: 60%;
 }
 #button_div
 {
   width: 100%;
-  height: 30vh;
+  height: 30%;
   display:flex;
   align-items:center;  /*vertically aligned! */
   justify-content: center;
@@ -40,10 +47,7 @@ body
 	display:none;
 }
 
-html
-{
- font-size:16px;
-}
+
 .game_container
 {
 	width: 100%;
@@ -141,41 +145,202 @@ html
 		display: inline;
 		text-align: right;
 	}
-	/*#highest_score_div
-	{
-		width: 100%;
-		height: 20%;
-		margin-top: 10%;
-		position: absolute;
-		color: black;
-		
-	}*/
-	/*final containte*/
 
-	.final_container
+
+   .final_container
   {
     width: 100%;
     height: 100%;
     display: none;
    
   }
+  
+  
 
-    #share
+  #share
   {
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
+
+
   }
 
   .result_container
 {
   background-color: #ffffff;
   width: 100%;
-  height: 90%;
+  height: 100%;
   border: 7px solid #1E90FF;
   border-radius: 20px;
   overflow: auto;
   margin-top: 5%;
 }
+
+ .button {
+            display: inline-block;
+            font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+            padding: .8em 1.4em;
+            padding-right: 4.7em;
+            background: #009ED8;
+            border: none;
+            color: white;
+            transition: .2s;
+        }
+        
+        .button:before,
+        .button:after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            padding-top: inherit;
+            padding-bottom: inherit;
+            width: 2.8em;
+            font-family: 'FontAwesome', sans-serif;
+            font-size: 1.2em;
+            text-align: center;
+            transition: .2s;
+            transform-origin: 50% 60%;
+        }
+        
+        .button:before {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        
+        .button:hover {
+            background: #0079a5;
+        }
+        
+        .button:active,
+        .button:focus {
+            background: #002e3f;
+            outline: none;
+        }
+        
+        
+        
+        .arrow {
+            background: #FE5F55;
+        }
+        
+        .arrow:hover {
+            background: #fe2f22;
+        }
+        
+        .arrow:active,
+        .arrow:focus {
+            background: #b90c01;
+        }
+        
+        .arrow:after {
+            content: "\F054";
+        }
+        
+        .arrow:hover:after {
+            -webkit-animation: bounceright .3s alternate ease infinite;
+            animation: bounceright .3s alternate ease infinite;
+        }
+
+  .search:after {
+            content: "\f01e";
+        }
+        
+        .search:hover:after {
+            -webkit-animation: none;
+            -webkit-transform: scale(1.4);
+            animation: none;
+            transform: scale(1.4);
+        }
+
+         @-webkit-keyframes bounceright {
+            from {
+                -webkit-transform: translateX(0);
+            }
+            to {
+                -webkit-transform: translateX(3px);
+            }
+        }
+        
+        @-webkit-keyframes wiggle {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(30deg);
+            }
+        }
+        
+        @keyframes bounceright {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(3px);
+            }
+        }
+        
+        @keyframes wiggle {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(30deg);
+            }
+        }
+
+         .shareFacebookBtn {
+            box-sizing: border-box;
+            position: relative;
+            /* width: 13em;  - apply for fixed size */
+            margin: 0.2em;
+            padding: 0 15px 0 46px;
+            border: none;
+            text-align: left;
+            line-height: 34px;
+            white-space: nowrap;
+            border-radius: 0.2em;
+            font-size: 16px;
+            color: #FFF;
+        }
+        
+        .shareFacebookBtn:before {
+            content: "";
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 34px;
+            height: 100%;
+        }
+        
+        .shareFacebookBtn:focus {
+            outline: none;
+        }
+        
+        .shareFacebookBtn:active {
+            box-shadow: inset 0 0 0 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .shareFacebookBtn--facebook {
+            background-color: #4C69BA;
+            background-image: linear-gradient(#4C69BA, #3B55A0);
+            /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+            text-shadow: 0 -1px 0 #354C8C;
+        }
+        
+        .shareFacebookBtn--facebook:before {
+            border-right: #364e92 1px solid;
+            background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png') 6px 6px no-repeat;
+        }
+        
+        .shareFacebookBtn--facebook:hover,
+        .shareFacebookBtn--facebook:focus {
+            background-color: #5B7BD5;
+            background-image: linear-gradient(#5B7BD5, #4864B1);
+        }
+
 
  #fails
    {
@@ -188,17 +353,6 @@ html
     margin-top: 5%;
   
   }
-  .retry
-{
-
-  float: left;
-  margin-left: 5%;
-}
-
-a{
-  float: right;
-  margin-right: 5%;
-}
 
   #tags
     {
@@ -206,25 +360,62 @@ a{
       font-size: 1rem;
     }
 
- 
-  #go_score
+
+h1
 {
   font-size: 2rem;
 }
 
-	h1
-	{
-		font-size: 3em;
-	}
+#go_score
+{
+  font-size: 1.5rem;
+}
+#textValue
+{
+  font-size: 1rem;
+}
+
+.retry
+{
+  float: left;
+  margin-left: 8%;
+  cursor: pointer;
+  color: #1E90FF;
+}
+#moregames
+{
+  float: right;
+  margin-right: 8%;
+}
+#inner_div
+{
+  height: 98%;
+  width: 95%;
+}
+
+
+
+
+
+
+
+
 
 
 /*	// Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
 
-	#icons
-	{
-	 margin-top:10%;
-	}
+
+	 #imageicon
+    {
+       width: 50%;
+       height: 50%;
+    }
+    .splash_container
+    {
+        margin-top: 15%;
+    }
+	
 	html
 	{
 		font-size:13px;
@@ -240,24 +431,64 @@ a{
 	{
 		margin-top:30%;
 	}
-	.result_container
-	{
-		margin-top: 35%;
-	}
+	html
+    {
+      font-size:11px;
+    }
+
+      .result_container
+      {
+         
+        height: 65%;
+        margin-top: 15%;
+      }
+      .retry
+      {
+          float: left;
+         margin-left: 3%;
+        cursor: pointer;
+        color: #1E90FF;
+      }
+      #moregames
+      {
+         float: right;
+          margin-right: 3%;
+      }
+	#inner_div
+      {
+        height:65%;
+      }
 
  }
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) { 
 
-	#icons
-	{
-		margin-top:10%;
-	}
-	html
-	{
-		font-size:14px;
-	}
+	#imageicon
+    {
+       width: 60%;
+       height: 65%;
+    }
+    .splash_container
+    {
+        margin-top: 10%;
+    }
+
+	  html
+    {
+      font-size:12px;
+    }
+
+      .result_container
+      {
+         
+        height: 99%;
+        margin-top: 1%;
+      }
+        #inner_div
+      {
+        height:99%;
+      }
 	.numbers
 	{
 		
@@ -271,10 +502,18 @@ a{
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) { 
 
-	#icons
-	{
-		margin-top:3%;
-	}
+
+
+	  #imageicon
+    {
+       width: 80%;
+       height: 60%;
+    }
+    .splash_container
+    {
+        margin-top: 15%;
+    }
+
 	.numbers
 	{
 		
@@ -285,25 +524,87 @@ a{
 	{
 		margin-top: 13%;
 	}
+	  html
+    {
+      font-size:13px;
+    }
+
+      .result_container
+      {
+         
+        height: 70%;
+        margin-top: 15%;
+      }
+        #inner_div
+      {
+        height:70%;
+      }
 
  }
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) { 
 
-		#icons
-		{
-			margin-top:2%;
-		}
+		 #imageicon
+    {
+       width: 80%;
+       height: 60%;
+    }
+    .splash_container
+    {
+        margin-top: 15%;
+    }
+
+       html
+    {
+      font-size:13px;
+    }
+
+      .result_container
+      {
+         
+        height: 73%;
+        margin-top: 15%;
+      }
+        #inner_div
+      {
+        height:73%;
+      }
+		
 
  }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
 
-		#icons
-		{
-			margin-top:8%;
-		}
+	#imageicon
+    {
+       width: 80%;
+       height: 60%;
+    }
+    .splash_container
+    {
+        margin-top: 15%;
+    }
+
+		
+
+	html
+    {
+      font-size:15px;
+    }
+
+      .result_container
+      {
+         
+        height: 78%;
+        margin-top: 15%;
+      }
+      #inner_div
+      {
+          height: 95%;
+         width: 90%;
+    }
+       
 
  }
