@@ -32,6 +32,8 @@ $(function()
 	var answer_array=['1','1','3','2','3','2','1','3','2','1','2','1','2','1','2','1'];
 	var index_value=Math.floor((Math.random()*question_array.length));
 	$("#que").text(question_array[index_value]);
+
+	
 	/*console.log("random nu = "+index_value);
 	console.log("question  = "+question_array[index_value]);
 	console.log("answer  = "+answer_array[index_value]);*/
@@ -134,12 +136,17 @@ $(function()
 		function load()
 		{
 			var hiscore=localStorage.getItem("scr");
-			if(hiscore=='undefined')
+			
+			if(hiscore==0)
 			{
 				score=0;
 				localStorage.setItem("scr",score);
+				
 			}
-			$("#highest_score").text("Best = "+hiscore);
+			if(hiscore>0)
+			$("#highest_score").text("Best  "+hiscore);
+			
+			
 		}
 
 		function result()
@@ -156,7 +163,7 @@ $(function()
 			}
 			
 			//$("#highest_score").text("HighestScore = "+score);
-			go_score.text("Score = "+score);
+			go_score.text(score);
 				clearInterval(id);
 				score=0;
 				$("#game_box").css("background-color","red");

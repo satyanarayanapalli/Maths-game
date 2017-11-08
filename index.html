@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <title>Play With Numbers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Anton'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -29,15 +32,19 @@
     </div>
 
 
-    <div class="col-sm-4"><div class="splash_container">
+    <div class="col-sm-4">
+     
+      <div class="splash_container">
       <center>
-      <img src="images/icon1.png" class="img-responsive" id="icons"/>
+      <img src="images/icon.png" class="img-responsive" id="icons"/>
     </center>
 
       <div id="button_div">
-   <button class="play_btn btn btn-danger btn-lg">PLAY</button>
+  <!--  <button class="play_btn btn btn-danger btn-lg">PLAY</button> -->
+  <img src="images/play.png" class="img-responsive play_btn"  id="play_icon"/>
  </div>
     </div>
+  
     </div>
 
 
@@ -121,8 +128,10 @@
 
 
   <div class="result_container">
-    <div class="animated zoomIn">
-      <h1 id="score" class="text-center">Your Score:</h1>
+    <div class="animated slideInLeft">
+<center>
+  <div id="inner_div">
+      <h1 id="score" class="text-center">Your Score</h1>
     <center>
    <span id="go_score">0</span>
   </center>
@@ -137,15 +146,23 @@ you did your best to become the best that you are capable of becoming. Effort to
 
 
   <div id="restart_moregames">
-     <a href="#" class="btn btn-info btn-sm retry" id="retry">
+    <!--  <a href="#" class="btn btn-info btn-sm retry" id="retry">
           <span class="glyphicon glyphicon-repeat"></span> Repeat
-        </a>
+        </a> -->
      <!-- <a href="#" id="retry" class ="retry">Retry</a> -->
 
-      <a href="http://sosimplegames.com/" class="btn btn-info btn-sm">
+     <!--  <a href="http://sosimplegames.com/" class="btn btn-info btn-sm">
           <span class="glyphicon glyphicon-bookmark"></span> More Games
-        </a>
+        </a> -->
     <!-- <a href="http://sosimplegames.com/">More Games</a> -->
+
+      <a class="retry" id="retry">
+              <button class="button btn-xs search">Retry</button>
+              </a>
+
+               <a id="moregames" href="http://sosimplegames.com/" target="_blank">
+                            <button class="button btn-xs arrow">More Games</button>
+                        </a>
   </div>
   <br/>
   <center>
@@ -153,12 +170,17 @@ you did your best to become the best that you are capable of becoming. Effort to
       <strong style="color:red;">TAG, you're it! CHALLENGE your FRIENDS by tagging them in the post. To share click on "SHARE ON FACEBOOK" button.</strong>
       </p>
       
-      <a class="btn btn-block btn-social btn-facebook" id="share">
+     <!--  <a class="btn btn-block btn-social btn-facebook" id="share">
     <span class="fa fa-facebook"></span> Share on facebook
-  </a>
+  </a> -->
       <!--  <div id="share" class="text-center">Share on facebook</div> -->
-
+      <div id="share"><center><button class="shareFacebookBtn shareFacebookBtn--facebook">
+                            Share on Facebook
+                        </button></center></div> 
     </center>
+
+</div>
+  </center>
 
 </div>
 </div>
